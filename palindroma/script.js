@@ -1,5 +1,5 @@
 //chiedo all'utente di inserire una parola e la salvo nella variabile userWord
-const userWord = prompt(`Inserisci una parola e verificherò se essa è palindroma per te`)
+const userWord = prompt(`Inserisci una parola e verificherò se essa è palindroma per te`).toLowerCase()
 //definisco la funzione che mi verificherà se la parola è palindroma
 //definisco una funzione con parametro word
 function palindrome (word) {
