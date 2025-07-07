@@ -9,4 +9,14 @@ function palindrome (word) {
   let reversedWord = characters.reverse()
   //unisco l'array generato in una stringa
   reversedWord = reversedWord.join("")
+  //ora che ho la parola al contrario, confrontabile con userWord la metto a confronto
+  if ( reversedWord == word) {
+    console.log(`la parola ${word} è palindroma`)
+  }
+    else {
+      console.log(`la parola ${word} non è palindroma`)
+    }
 }
+
+
+palindrome (userWord)
