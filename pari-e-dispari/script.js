@@ -8,16 +8,16 @@ console.log(`hai inserito ${userNumber}`)
 const pcNumber = Math.floor(Math.random()*5+ 1)
 console.log(`il computer ha generato ${pcNumber}`)
 //definisco una funzione con parametri pari o dispari, il numero dell'utente e quello del pc
-function oddEvenGame (evenOrOdd, x, y) {
+function oddEvenGame ( x, y) {
   //eseguo la somma tra userNumber e pcNumber
   let sum = x + y;
   //verifico se sum è pari o dispari
   if (sum %2 === 0) {
-    console.log(`${userNumber} + ${pcNumber} = ${sum} è pari`)
+    console.log(`${userNumber} + ${pcNumber} = ${sum} ed è pari`)
     sum = `pari`
   }
     else{
-      console.log(`${userNumber} + ${pcNumber} = ${sum} è dispari`)
+      console.log(`${userNumber} + ${pcNumber} = ${sum} ed è dispari`)
       sum = `dispari`
     }
     //dopo aver dato un valore in stringa a sum lo confronto con oddOrEven inserito dall'utente e dichiaro il vincitore
@@ -30,4 +30,4 @@ function oddEvenGame (evenOrOdd, x, y) {
     
 }
 
-oddEvenGame (oddOrEven, userNumber, pcNumber)
+oddEvenGame (userNumber, pcNumber)
